@@ -11,8 +11,12 @@ import matplotlib.pyplot as plt
 
 data = set()
 for line in sys.stdin:
-    x = int(line)
-    data.add(x)
+    try:
+        x = int(line)
+        data.add(x)
+    except:
+        print("Invalid line")
+        sys.exit()
 
 # showfliers=False, if too much data
 plt.boxplot(data)

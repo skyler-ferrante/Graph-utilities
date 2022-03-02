@@ -22,8 +22,7 @@ for line in sys.stdin:
         x = float(tokens[0])
         y = float(tokens[1])
     except ValueError:
-        print("Invalid line:", line, end="")
-        print("Valid line: 1,2")
+        print("Invalid line")
         sys.exit()
     
     xs.append(x)

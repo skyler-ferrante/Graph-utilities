@@ -16,8 +16,12 @@ for line in sys.stdin:
     line.rstrip()
     tokens = line.split(",")
     
-    heights.append( float(tokens[0]) )
-    labels.append(tokens[1])
+    try:
+        heights.append( float(tokens[0]) )
+        labels.append(tokens[1])
+    except:
+        print("Invalid line")
+        sys.exit()
 
 plt.bar(labels, heights)
 plt.show()
