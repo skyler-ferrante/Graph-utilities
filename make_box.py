@@ -18,6 +18,10 @@ for line in sys.stdin:
         print("Invalid line")
         sys.exit()
 
+# Set title to second command argument
+if len(sys.argv) > 1:
+    plt.title(sys.argv[1])
+
 # showfliers=False, if too much data
 plt.boxplot(data)
 plt.show()

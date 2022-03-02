@@ -28,5 +28,9 @@ for line in sys.stdin:
     xs.append(x)
     ys.append(y)
 
+# Set title to second command argument
+if len(sys.argv) > 1:
+    plt.title(sys.argv[1])
+
 plt.scatter(xs,ys)
 plt.show()

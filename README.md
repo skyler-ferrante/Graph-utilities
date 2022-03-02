@@ -9,8 +9,8 @@ Install dependencies
 
 Example usage:
 
-`./make_box.py <data/box.txt`
+`./make_box.py "Title" <data/box.txt`
 
-`./make_scatter.py <data/scatter.txt`
+`./make_scatter.py "Title" <data/scatter.txt`
 
-`./make_bar.py <data/bar.txt`
+`./make_bar.py "Title" <data/bar.txt`
