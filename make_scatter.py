@@ -21,7 +21,7 @@ for line in sys.stdin:
     try:
         x = float(tokens[0])
         y = float(tokens[1])
-    except ValueError:
+    except:
         print("Invalid line")
         sys.exit()
     
