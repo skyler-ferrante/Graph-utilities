@@ -13,4 +13,6 @@ Example usage:
 
 `./make_scatter.py "Title" <data/scatter.txt`
 
-`./make_bar.py "Title" <data/bar.txt`
+`./make_bar.py "Title" <data/bar_and_pie.txt`
+
+`./make_pie.py "Title" <data/bar_and_pie.txt`
