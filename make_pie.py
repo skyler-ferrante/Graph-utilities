@@ -20,7 +20,7 @@ for line in sys.stdin:
         size.append( float(tokens[0]) )
         labels.append(tokens[1])
     except:
-        print("Invalid line")
+        print("Invalid line",line)
         sys.exit()
 
 # Set title to second command argument

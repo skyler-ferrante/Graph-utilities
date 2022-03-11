@@ -15,7 +15,7 @@ for line in sys.stdin:
         x = int(line)
         data.add(x)
     except:
-        print("Invalid line")
+        print("Invalid line",line)
         sys.exit()
 
 # Set title to second command argument
